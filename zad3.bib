@@ -1,0 +1,61 @@
+@article{article1,
+  author    = {Author A},
+  title     = {Title of Article 1},
+  journal   = {Journal A},
+  year      = {2022},
+  volume    = {1},
+  number    = {1},
+  pages     = {1-10},
+}
+
+@article{article2,
+  author    = {Author B},
+  title     = {Title of Article 2},
+  journal   = {Journal B},
+  year      = {2023},
+  volume    = {2},
+  number    = {2},
+  pages     = {20-30},
+}
+
+@book{book1,
+  author    = {Author C},
+  title     = {Title of Book 1},
+  publisher = {Publisher X},
+  year      = {2021},
+}
+
+@inproceedings{conference1,
+  author    = {Author D},
+  title     = {Title of Conference Paper},
+  booktitle = {Proceedings of Conference Y},
+  year      = {2024},
+  pages     = {100-110},
+}
+
+@unpublished{unpublished1,
+  author    = {Author E},
+  title     = {Title of Unpublished Work},
+  note      = {Unpublished},
+  year      = {2020},
+}
+
+@manual{manual1,
+  author    = {Author F},
+  title     = {Title of Manual},
+  organization = {Organization Z},
+  year      = {2019},
+}
+Następnie, w pliku LaTeX, możesz użyć poniższego kodu, aby generować bibliografię wraz z przypisaniami do tych referencji:
+
+latex
+Copy code
+\documentclass{article}
+\begin{document}
+
+\cite{article1, article2, book1, conference1, unpublished1, manual1}
+
+\bibliographystyle{plain}
+\bibliography{data}
+
+\end{document}
