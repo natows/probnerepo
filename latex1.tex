@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\title{Tytuł Twojej Pracy}
+\author{Imię Nazwisko}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    To jest streszczenie pracy.
+\end{abstract}
+
+\section{Wprowadzenie}
+Tekst wprowadzenia.
+
+\section{Rozdział Pierwszy}
+\subsection{Podrozdział 1.1}
+Tekst podrozdziału.
+
+\subsection{Podrozdział 1.2}
+Tekst podrozdziału.
+
+\section{Rozdział Drugi}
+\subsection{Podrozdział 2.1}
+Tekst podrozdziału.
+
+\subsection{Podrozdział 2.2}
+Tekst podrozdziału.
+
+\section{Formatowanie Tekstu}
+\textbf{Tekst pogrubiony}, \emph{tekst pochylony}, \underline{tekst podkreślony}.
+
+\section{Tryb Matematyczny}
+Przykład równania w trybie matematycznym: $E=mc^2$.
+
+\section{Rysunki}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image-a}
+    \caption{Podpis do pierwszego rysunku.}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{c}
+        \includegraphics[width=0.3\textwidth]{example-image-b} \\
+        \textbf{Rysunek z tekstem.}
+    \end{tabular}
+    \caption{Podpis do drugiego rysunku.}
+\end{figure}
+
+\section{Tabela}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Kolumna 1 & Kolumna 2 \\
+        \hline
+        Wiersz 1  & Wartość A \\
+        \hline
+        Wiersz 2  & Wartość B \\
+        \hline
+    \end{tabular}
+    \caption{Tabela odnosząca się do tekstu.}
+\end{table}
+
+\section{Odwołania do Rysunków i Tabel}
+Jak widzimy na Rysunku \ref{fig:rysunek1}, oraz na Rysunku \ref{fig:rysunek2} z tekstem, tabela \ref{tab:tabela1} przedstawia...
+
+\section{Podsumowanie}
+Podsumowanie pracy.
+
+\begin{thebibliography}{9}
+    \bibitem{przyklad1} Autor A. \emph{Tytuł Publikacji A.} Wydawnictwo, 2022.
+    \bibitem{przyklad2} Autor B. \emph{Tytuł Publikacji B.} Inne Wydawnictwo, 2023.
+\end{thebibliography}
+
+\end{document}
