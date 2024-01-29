@@ -1,0 +1,83 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+\title{Tytuł Prezentacji}
+\author{Imię Nazwisko}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Wprowadzenie}
+\begin{frame}{Wprowadzenie}
+  Tekst wprowadzenia.
+\end{frame}
+
+\section{Motywacja}
+\begin{frame}{Motywacja}
+  \begin{itemize}
+    \item Element dynamiczny 1.
+    \item Element dynamiczny 2.
+  \end{itemize}
+\end{frame}
+
+\section{Rysunki}
+\begin{frame}{Rysunek 1}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{example-image-a}
+    \caption{Podpis do rysunku 1.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Rysunek 2}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{example-image-b}
+    \caption{Podpis do rysunku 2.}
+  \end{figure}
+\end{frame}
+
+\section{Tabela}
+\begin{frame}{Tabela}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+      \hline
+      Kolumna 1 & Kolumna 2 \\
+      \hline
+      Wiersz 1   & Wartość A \\
+      Wiersz 2   & Wartość B \\
+      \hline
+    \end{tabular}
+    \caption{Tabela odnosząca się do prezentacji.}
+  \end{table}
+\end{frame}
+
+\section{Elementy Dynamiczne}
+\begin{frame}{Elementy Dynamiczne}
+  \begin{enumerate}
+    \item Pierwszy element dynamiczny.
+    \item Drugi element dynamiczny.
+  \end{enumerate}
+\end{frame}
+
+\section{Odwołania}
+\begin{frame}{Odwołania}
+  Odwołanie do Rysunku \ref{fig:rysunek1} oraz Rysunku \ref{fig:rysunek2}. Tabela \ref{tab:tabela1} przedstawia...
+\end{frame}
+
+\section{Bibliografia}
+\begin{frame}{Bibliografia}
+  \begin{thebibliography}{9}
+    \bibitem{przyklad1} Autor A. \emph{Tytuł Publikacji A.} Wydawnictwo, 2022.
+    \bibitem{przyklad2} Autor B. \emph{Tytuł Publikacji B.} Inne Wydawnictwo, 2023.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
